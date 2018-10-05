@@ -13,6 +13,6 @@ Presented collections:
         <td>1</td>
         <td>SimplyArray</td>
         <td>Simply array the same on ArrayList</td>
-        <td>Simply.java</td>
+        <td>ISimplyArrayList.java</td>
     </tr>
 </table>
