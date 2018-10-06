@@ -8,7 +8,6 @@ Presented collections:
         <td style="aligne: center;">Name collection</td>
         <td style="aligne: center;">Description</td>
         <td style="aligne: center;">Interface</td>
-        <td style="aligne: center;">Methods</td>
     </tr>
     <tr>
         <td>1</td>
@@ -22,19 +21,18 @@ Presented collections:
             array to the specified index and copy the rest of the old array
             given that 1 element of the array is taken away. After everything is going. 
             This collection uses generics, therefore, the collection is parameterized.
+            </br>
+                <ol>
+                    <li>boolean add(E e);</li>
+                    <li>void delete(int index);/li>
+                    <li>E get(int index);</li>
+                    <li>E getFirst();</li>
+                    <li>E getLast();</li>
+                    <li>void clear();</li>
+                    <li>int size();</li>
+                    <li>void update(int index, E e);</li>                
+                </ol>
         </td>
-        <td>ISimplyArrayList.java</td>
-        <td>
-            <ol>
-                <li>boolean add(E e);</li>
-                <li>void delete(int index);/li>
-                <li>E get(int index);</li>
-                <li>E getFirst();</li>
-                <li>E getLast();</li>
-                <li>void clear();</li>
-                <li>int size();</li>
-                <li>void update(int index, E e);</li>                
-            </ol>
-        </td>
+        <td>ISimplyArrayList.java</td>        
     </tr>
 </table>
