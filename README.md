@@ -24,7 +24,7 @@ Presented collections:
             </br>
                 <ol>
                     <li>boolean add(E e);</li>
-                    <li>void delete(int index);/li>
+                    <li>void delete(int index);</li>
                     <li>E get(int index);</li>
                     <li>E getFirst();</li>
                     <li>E getLast();</li>
