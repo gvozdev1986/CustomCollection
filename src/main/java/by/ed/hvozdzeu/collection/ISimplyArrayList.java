@@ -4,15 +4,15 @@ package by.ed.hvozdzeu.collection;
  * The interface for SimpleArray with main methods
  * for work with collection
  *
- * @date   2018/10/05
+ * @param <E> parameterized item
  * @author Aliaksandr Hvozdzeu
  * @author <a href="mailto:aliaksandr.hvozdzeu@gmail.com">Aliaksandr Hvozdzeu</a>
- * @param <E> parameterized item
+ * @date 2018/10/05
  */
 public interface ISimplyArrayList<E> extends Iterable<E> {
 
     /**
-     * The method for add new item to array
+     * The method to add new item to array
      *
      * @param e parameterized item
      * @return boolean (true - suSccess / false - unsuccess)
@@ -20,14 +20,14 @@ public interface ISimplyArrayList<E> extends Iterable<E> {
     boolean add(E e);
 
     /**
-     * The method for delete item from array by id
+     * The method to delete item from array by id
      *
      * @param index int Index item in array
      */
     void delete(int index);
 
     /**
-     * The method for get item by id
+     * The method to get item by id
      *
      * @param index int Index item in array
      * @return E parameterized item
@@ -35,17 +35,36 @@ public interface ISimplyArrayList<E> extends Iterable<E> {
     E get(int index);
 
     /**
-     * The method for getting size array
+     * The method to get first item
+     *
+     * @return E parameterized item
+     */
+    E getFirst();
+
+    /**
+     * The method to clear array
+     */
+    void clear();
+
+    /**
+     * The method to get last item
+     *
+     * @return E parameterized item
+     */
+    E getLast();
+
+    /**
+     * The method to getting size array
      *
      * @return int Amount items in array
      */
     int size();
 
     /**
-     * The method for update item by id
+     * The method to update item by id
      *
      * @param index int Index in array
-     * @param e e parameterized item
+     * @param e     e parameterized item
      */
     void update(int index, E e);
 

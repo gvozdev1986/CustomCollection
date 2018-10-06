@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 /**
  * The test SimpleArray collection
  */
-public class ISimplyArrayListTest {
+public class SimplyArrayListTest {
 
     /**
      * Create SimpleArray
@@ -26,9 +26,9 @@ public class ISimplyArrayListTest {
         /*
         Add items to ISimplyArrayList
          */
-        stringISimplyArrayList.add("one");
-        stringISimplyArrayList.add("two");
-        stringISimplyArrayList.add("tree");
+        assertTrue(stringISimplyArrayList.add("one"));
+        assertTrue(stringISimplyArrayList.add("two"));
+        assertTrue(stringISimplyArrayList.add("tree"));
 
         /*
         Check then not null and size equals
@@ -42,9 +42,9 @@ public class ISimplyArrayListTest {
         /*
         Add items to ISimplyArrayList
          */
-        stringISimplyArrayList.add("one");
-        stringISimplyArrayList.add("two");
-        stringISimplyArrayList.add("tree");
+        assertTrue(stringISimplyArrayList.add("one"));
+        assertTrue(stringISimplyArrayList.add("two"));
+        assertTrue(stringISimplyArrayList.add("tree"));
 
         /*
         Delete item from ISimplyArrayList
@@ -59,13 +59,35 @@ public class ISimplyArrayListTest {
     }
 
     @Test
+    public void clear() {
+        /*
+        Add items to ISimplyArrayList
+         */
+        assertTrue(stringISimplyArrayList.add("one"));
+        assertTrue(stringISimplyArrayList.add("two"));
+        assertTrue(stringISimplyArrayList.add("tree"));
+
+        /*
+        Get item by item id
+         */
+        stringISimplyArrayList.clear();
+
+        /*
+        Check then not null and size equals
+         */
+        assertNotNull(stringISimplyArrayList);
+        assertEquals(null, stringISimplyArrayList.get(0));
+        assertEquals(3, stringISimplyArrayList.size());
+    }
+
+    @Test
     public void getByIndex() {
         /*
         Add items to ISimplyArrayList
          */
-        stringISimplyArrayList.add("one");
-        stringISimplyArrayList.add("two");
-        stringISimplyArrayList.add("tree");
+        assertTrue(stringISimplyArrayList.add("one"));
+        assertTrue(stringISimplyArrayList.add("two"));
+        assertTrue(stringISimplyArrayList.add("tree"));
 
         /*
         Get item by item id
@@ -84,9 +106,9 @@ public class ISimplyArrayListTest {
         /*
         Add items to ISimplyArrayList
          */
-        stringISimplyArrayList.add("one");
-        stringISimplyArrayList.add("two");
-        stringISimplyArrayList.add("tree");
+        assertTrue(stringISimplyArrayList.add("one"));
+        assertTrue(stringISimplyArrayList.add("two"));
+        assertTrue(stringISimplyArrayList.add("tree"));
 
         /*
         Get size simple array
@@ -102,13 +124,46 @@ public class ISimplyArrayListTest {
     }
 
     @Test
+    public void getFirst() {
+        /*
+        Add items to ISimplyArrayList
+         */
+        assertTrue(stringISimplyArrayList.add("one"));
+        assertTrue(stringISimplyArrayList.add("two"));
+        assertTrue(stringISimplyArrayList.add("tree"));
+
+         /*
+        Check then not null and gettingLatItem
+         */
+        assertNotNull(stringISimplyArrayList);
+        assertEquals("one", stringISimplyArrayList.getFirst());
+    }
+
+
+    @Test
+    public void getLast() {
+        /*
+        Add items to ISimplyArrayList
+         */
+        assertTrue(stringISimplyArrayList.add("one"));
+        assertTrue(stringISimplyArrayList.add("two"));
+        assertTrue(stringISimplyArrayList.add("tree"));
+
+         /*
+        Check then not null and gettingLatItem
+         */
+        assertNotNull(stringISimplyArrayList);
+        assertEquals("tree", stringISimplyArrayList.getLast());
+    }
+
+    @Test
     public void updateByIndex() {
         /*
         Add items to ISimplyArrayList
          */
-        stringISimplyArrayList.add("one");
-        stringISimplyArrayList.add("two");
-        stringISimplyArrayList.add("tree");
+        assertTrue(stringISimplyArrayList.add("one"));
+        assertTrue(stringISimplyArrayList.add("two"));
+        assertTrue(stringISimplyArrayList.add("tree"));
 
         /*
         Update item by id

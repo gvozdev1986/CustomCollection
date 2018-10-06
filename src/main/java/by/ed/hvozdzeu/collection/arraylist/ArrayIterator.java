@@ -36,6 +36,7 @@ public class ArrayIterator<E> implements Iterator<E> {
      *
      * @return true if array has next item, false if array has not next item
      */
+    @Override
     public boolean hasNext() {
         return index < values.length;
     }
@@ -45,6 +46,7 @@ public class ArrayIterator<E> implements Iterator<E> {
      *
      * @return <E> parameterized item
      */
+    @Override
     public E next() {
         return values[index++];
     }
@@ -52,6 +54,7 @@ public class ArrayIterator<E> implements Iterator<E> {
     /**
      * Unsupported method
      */
+    @Override
     public void remove() {
         throw new UnsupportedOperationException("remove");
     }
